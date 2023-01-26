@@ -1,0 +1,20 @@
+# The Ultimate Guide to setup & Secure Remote Desktop Connections .
+ 
+1. Difference between RDP and VPS.
+2. What a personal & Business  benefit.
+3. How to Setup a RDP.
+4. Open port "Windows".
+5. Open port "Router". '12345'
+6. Setup Accounts and passwords.
+7. Encryption and protection methods.
+8. Additional notes
+ 
+ 
+# Win + R ==> RUN
+ 
+1. "secpol.msc" ==> Local Policies ==> User Rights Assignment ==> Allow Log on. ' Identify Users'
+2. "gpedit.msc" ==> Administrative Templates ==> Windows Components ==> RDPS ==> RDPSHOST ==> Security 
+2.1 ( 2 apply ) + ( 4 apply ) + ( 5 apply SSL ) ( Last one apply  )
+ 
+3. "regedit" Computer\ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ Terminal Server\WinStations\RDP-Tcp "To Change Port 23456"
+4. "mstsc"
